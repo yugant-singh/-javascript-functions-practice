@@ -1,0 +1,173 @@
+  📝 JavaScript Functions & Rest Operator Cheat Sheet
+1️⃣ Rest Operator ...
+
+Purpose: Function me jitne bhi extra arguments aaye unko ek array me collect karna.
+
+Syntax:
+
+function fn(...args) {
+    console.log(args);
+}
+fn(1, 2, 3); // [1, 2, 3]
+
+
+Rules: Hamesha last parameter hona chahiye.
+
+2️⃣ Default Parameters
+
+Agar argument na aaye to default value assign kar do.
+
+function greet(name = "Guest") {
+    return `Welcome ${name}`;
+}
+console.log(greet());      // Welcome Guest
+console.log(greet("Yugant")); // Welcome Yugant
+
+3️⃣ Iterating Rest Parameters
+
+forEach → simple iteration
+
+function printAll(...vals) {
+    vals.forEach(val => console.log(val));
+}
+printAll(1, "hello", true);
+
+
+reduce → sum, product, etc.
+
+function sumAll(...nums) {
+    return nums.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sumAll(1, 2, 3, 4)); // 10
+
+
+join → strings combine karna
+
+function concatStrings(...strings) {
+    return strings.join(" ");
+}
+console.log(concatStrings("Hello", "Yugant")); // Hello Yugant
+
+4️⃣ Finding Max / Min
+
+Loop method:
+
+function findMax(...nums) {
+    let max = nums[0];
+    nums.forEach(num => { if(num > max) max = num });
+    return max;
+}
+
+
+Pro method (Math.max):
+
+function findMax(...nums) {
+    return Math.max(...nums);
+}
+
+5️⃣ Type Based Separation
+
+Assignment to object properties:
+
+function separateTypes(...args) {
+    let numbers = [], strings = [], booleans = [];
+
+    args.forEach(val => {
+        if(typeof val === "number") numbers.push(val);
+        else if(typeof val === "string") strings.push(val);
+        else if(typeof val === "boolean") booleans.push(val);
+    });
+
+    return { numbers, strings, booleans }; // shortcut syntax
+}
+console.log(separateTypes(1, "hi", true, 5, "world", false));
+
+
+Key point: obj.prop = value, || se hi object me property assign hoti hai.
+
+6️⃣ Pro Tips
+
+Rest Operator ka use unlimited arguments handle karne ke liye karo.
+
+reduce() aur join() se loops ki jagah clean code likh sakte ho.
+
+Default parameters use karo, taaki missing arguments problem na aaye.
+
+Object me assignment mat bhoolna — sirf property mention karne se kaam nahi chalega.
+
+Arrow functions + one-liners me Rest Operator aur array methods ka combination powerful hai.
+
+
+===========================================================================================
+
+🔹 Higher Order Function (HOF) kya hota hai?
+
+👉 Definition:
+A function jo dusre function ko parameter ke roop me accept kare ya ek function ko return kare, usse Higher Order Function (HOF) kehte hain.
+
+Matlab HOF functions ke sath play karte hain.
+
+
+---------------------------------------------------------------------------------------------
+Example 1: Function as parameter
+
+function greetUser(callback) {
+  console.log("Welcome!");
+  callback();   // dusra function call kiya
+}
+
+function sayName() {
+  console.log("My name is Yugant Singh");
+}
+
+greetUser(sayName);
+
+
+🔹 Yahaan greetUser ek HOF hai kyunki ye dusre function sayName ko as argument accept kar raha hai.
+-------------------------------------------------------------------------------------------------
+Example 2: Function returning function
+
+function multiplier(x) {
+  return function(y) {
+    return x * y;
+  };
+}
+
+let double = multiplier(2); // function return kiya
+console.log(double(5)); // 10
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Explanation 
+Example 2 -
+
+Step by Step Execution 🔎
+
+multiplier(2) call hota hai
+
+x = 2 store ho jata hai.
+
+Ye ek **function(y) { return x * y }` return karta hai.
+
+Matlab ab double ke paas ye function hai:
+
+function(y) {
+  return 2 * y; // kyunki x = 2 tha
+}
+
+
+double(5) call hota hai
+
+Ab yaha y = 5.
+
+  Function ke andar abhi bhi x = 2 ki value yaad hai.
+
+Return karega → 2 * 5 = 10.
+
+❓ Lekin x ki value kaise yaad rahi?
+
+Ye hota hai Closure ke wajah se.
+
+Jab ek inner function outer function ke variable ko use karta hai, to wo variables uske sath “memory box” me band ho jate hain.
+
+Isliye multiplier khatam hone ke baad bhi, inner function ke paas x ki value safe hoti hai.
+

@@ -1,0 +1,269 @@
+
+
+✅ Practice Set — Functions Mastery (Level 1 to 3)
+
+ Focus: parameters, arguments, return
+-----------------------------------------------------------------------------------------------
+Q1.✅
+
+function greet(name) {
+  console.log("Hello " + name);
+}
+greet("Yugant");
+greet();
+
+Output kya hoga?
+Agar second call me koi argument nahi diya gaya, kya hoga?
+-----------------------------------------------------------------------------------------------
+Q2.✅
+
+function add(a, b) {
+  return a + b;
+}
+console.log(add(5, 7));
+console.log(add(10)); 
+Second call me kya output aayega aur kyun?
+-----------------------------------------------------------------------------------------------
+Q3.✅
+function introduce(name = "Guest", country = "India") {
+  console.log(`${name} is from ${country}`);
+}
+introduce("Yugant", "Japan");
+introduce("Ravi");
+introduce();
+
+Teeno calls ke output likho.
+-----------------------------------------------------------------------------------------------
+Q4.✅
+
+function sumAll(...nums) {
+  let total = 0;
+  for (let n of nums) total += n;
+  return total;
+}
+
+console.log(sumAll(2, 4, 6));
+console.log(sumAll(5));
+console.log(sumAll());
+
+
+Explain karo ki rest parameter kya kar raha hai.
+
+ Level 3: Spread Operator & Combination
+ Focus: spread aur rest dono
+-----------------------------------------------------------------------------------------------
+Q5.✅
+
+function multiply(a, b, c) {
+  console.log(a * b * c);
+}
+const arr = [2, 3, 4];
+multiply(...arr);
+
+Yahan ...arr kya kar raha hai? Output kya hoga?
+-----------------------------------------------------------------------------------------------
+Q6.✅
+
+function showDetails(...info) {
+  console.log(info);
+}
+
+const data = ["Yugant", 21, "Surat"];
+showDetails(...data);
+
+Step by step explain karo ki ... dono jagah kya kar raha hai.
+
+Level 4: Hoisting (Conceptual Challenge)
+Focus: JS engine ka working samajhna
+-----------------------------------------------------------------------------------------------
+Q7.✅
+
+sayHi();
+
+function sayHi() {
+  console.log("Hello!");
+}
+
+const greet = function() {
+  console.log("Hi there!");
+};
+
+greet();
+Yeh code bina error chalega?
+Agar greet(); ko upar likh do to kya hoga?
+-----------------------------------------------------------------------------------------------
+Q8.✅
+
+console.log(sum(2, 3));
+
+function sum(a, b) {
+  return a + b;
+}
+
+console.log(multiply(2, 3));
+
+const multiply = (a, b) => a * b;
+ Bonus Challenge (Real-Life Style)
+ Mix of everything you learned
+-----------------------------------------------------------------------------------------------
+Q9.✅
+
+function orderSummary(customer = "Guest", ...items) {
+  console.log(`Customer: ${customer}`);
+  console.log(`Items: ${items.join(", ")}`);
+  console.log(`Total items: ${items.length}`);
+}
+
+orderSummary("Yugant", "Burger", "Fries", "Coke");
+orderSummary("Ravi");
+orderSummary();
+practice.txt
+
+Output likho aur samjhao kya ho raha hai har call me.   
+
+
+======================================================================================
+ ✅Q1: Ek function printAll banao jo jitne bhi arguments aaye, unko line by line print kare.
+
+ ✅ Q2: Ek function addAll banao jo jitne bhi    numbers aaye unka sum return kare.
+
+ ✅ Q3: concatStrings("Hello", "Yugant", "Singh") → "Hello Yugant Singh"
+
+✅ Q4: findMax(10, 25, 8, 99, 32) → 99
+
+✅ Q5: Ek function separateTypes(...args) banao jo mixed arguments lega (numbers, strings, booleans).
+    Phir unko unke type ke hisaab se alag-alag arrays me rakhe.
+    Aur ek object return kare jisme teen arrays ho:
+
+    *  numbers → saare numbers
+    *  strings → saare strings
+    *  booleans → saare booleans
+======================================================================================
+✅Q6: findMin
+
+ Jitne bhi numbers aaye, unme se minimum return kare.
+ findMin(10, 25, 8, 99, 32); // 8
+=========================================================================================
+
+
+ ✅Q8: filterByType ==> Ek function filterByType(type, ...args) banao.
+
+Pehla argument hoga type → "number", "string", ya "boolean".
+Baaki jitne arguments aaye, unme se sirf wahi values return karni hain jo type ke match karte ho.
+=========================================================================================
+ Q9: sumEvenOdd
+Goal:
+Function me numbers pass honge → ...nums
+Hume calculate karna hai:
+even numbers ka sum
+odd numbers ka sum
+Return ek object jisme { even: sumEven, odd: sumOdd }
+
+
+
+
+==============================================================================================
+📝 Easy Higher-Order Function Practice
+Q1 – Function as Argument
+
+Ek function greetUser likho jo ek callback function lega aur usko run karega.
+------------------------------------------------------------------------------------------------
+Q2 - What is the difference between function statement and function expression in terms of hoisting :
+
+Ans- function statement can be hoisted ,means they can be call before the define but function expression can not hold the hoisting property 
+
+------------------------------------------------------------------------------------------------
+Q3 - convert the given function in to arrow function.
+function multiply(a,b){
+    return a*b;
+}
+------------------------------------------------------------------------------------------------
+Q4 - How many Arguement pass in the function
+
+function demo(a,b,c){}
+
+demo(12,3);
+------------------------------------------------------------------------------------------------
+Q5 - Predict the output of the given code
+
+function sayHii(name = "Guest"){
+console.log(name);
+}
+sayHii();
+
+------------------------------------------------------------------------------------------------
+Q6 -What does the ... operator mean in the parameter
+------------------------------------------------------------------------------------------------
+Q7 - Use the rest parameter to accept any number of score and return the sum of score
+------------------------------------------------------------------------------------------------
+Q8 - Fixed the function with early return 
+
+function checkAge(age){
+
+    if(age>18){
+        console.log("You can vote");
+    } else {
+        console.log("Its too early");
+    }
+}
+checkAge(12);
+
+------------------------------------------------------------------------------------------------
+Q9 - What does it mean when we say that "Function are first class citizens"
+--------------------------------------------------------------------------
+Q10 - Pass an function into another function and execute it 
+---------------------------------------------------------------------------
+
+Q11 - What is Higher order function 
+----------------------------------------------------------------------------
+Q12 -What is Pure and Impure function in js 
+
+------------------------------------------------------------------------------
+Q13 What is closure and when is created ?
+------------------------------------------------------------------------------
+Q14 - Convert this this normal function into IIFE function
+function init(){
+    console.log("initialised");
+}
+=============================================================================================
+Higher Order Function + Closure + Currying level
+---------------------------------------------------------------------------------------------
+Q1. (Function as Parameter)
+
+Ek HOF runTwice banao jo ek function accept kare aur usko 2 baar run kare.
+-------------------------------------------------------------------------------------------------
+
+Q2. (Closure Basic)
+
+Ek function counter banao jo ek function return kare. Har baar call karne par counter +1 ho jaye.
+------------------------------------------------------------------------------------------------------
+🔹 Medium Level
+Q3. (Currying Sum)
+
+Ek function sum banao jo 3 arguments ko alag alag function calls me accept kare aur unka sum return kare.
+-------------------------------------------------------------------------------------------------------
+🔹 Q4. Greater Than with Closure
+
+Ek function greaterThan(n) banao jo ek function return kare
+Ye inner function ek number lega aur check karega ki wo n se bada hai ya nahi.
+Agar bada hai → true, nahi → false
+
+==============================================================================================================
+
+✅ Mini Practice Set (Self Try)
+
+Q6: Ek function repeatN banao jo ek function aur number n accept kare. Function ko n baar call kare.
+
+Q7: Ek function multiplyBy(x) banao jo ek function return kare. Inner function kisi number ko x se multiply kare.
+
+Q8: Ek function isBetween(min, max) banao jo number accept kare aur check kare ki number min aur max ke beech hai ya nahi.
+
+Q9: Ek function chainSum(a) banao jo multiple chained calls ke through sum calculate kare. Example: chainSum(1)(2)(3)(4)() → 10.
+
+Q10: Ek function mapArray(arr, func) banao jo array aur function accept kare aur new array return kare jisme function applied ho.
+
+=================================================================================================================
+
+
+
+
