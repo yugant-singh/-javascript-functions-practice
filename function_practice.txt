@@ -164,27 +164,27 @@ Return ek object jisme { even: sumEven, odd: sumOdd }
 
 ==============================================================================================
 📝 Easy Higher-Order Function Practice
-Q1 – Function as Argument
+✅Q1 – Function as Argument
 
 Ek function greetUser likho jo ek callback function lega aur usko run karega.
 ------------------------------------------------------------------------------------------------
-Q2 - What is the difference between function statement and function expression in terms of hoisting :
+✅Q2 - What is the difference between function statement and function expression in terms of hoisting :
 
 Ans- function statement can be hoisted ,means they can be call before the define but function expression can not hold the hoisting property 
 
 ------------------------------------------------------------------------------------------------
-Q3 - convert the given function in to arrow function.
+✅Q3 - convert the given function in to arrow function.
 function multiply(a,b){
     return a*b;
 }
 ------------------------------------------------------------------------------------------------
-Q4 - How many Arguement pass in the function
+✅Q4 - How many Arguement pass in the function
 
 function demo(a,b,c){}
 
 demo(12,3);
 ------------------------------------------------------------------------------------------------
-Q5 - Predict the output of the given code
+✅Q5 - Predict the output of the given code
 
 function sayHii(name = "Guest"){
 console.log(name);
@@ -192,11 +192,11 @@ console.log(name);
 sayHii();
 
 ------------------------------------------------------------------------------------------------
-Q6 -What does the ... operator mean in the parameter
+✅Q6 -What does the ... operator mean in the parameter
 ------------------------------------------------------------------------------------------------
-Q7 - Use the rest parameter to accept any number of score and return the sum of score
+✅Q7 - Use the rest parameter to accept any number of score and return the sum of score
 ------------------------------------------------------------------------------------------------
-Q8 - Fixed the function with early return 
+✅Q8 - Fixed the function with early return 
 
 function checkAge(age){
 
@@ -209,40 +209,40 @@ function checkAge(age){
 checkAge(12);
 
 ------------------------------------------------------------------------------------------------
-Q9 - What does it mean when we say that "Function are first class citizens"
+✅Q9 - What does it mean when we say that "Function are first class citizens"
 --------------------------------------------------------------------------
-Q10 - Pass an function into another function and execute it 
+✅Q10 - Pass an function into another function and execute it 
 ---------------------------------------------------------------------------
 
-Q11 - What is Higher order function 
+✅Q11 - What is Higher order function 
 ----------------------------------------------------------------------------
-Q12 -What is Pure and Impure function in js 
+✅Q12 -What is Pure and Impure function in js 
 
 ------------------------------------------------------------------------------
-Q13 What is closure and when is created ?
+✅Q13 What is closure and when is created ?
 ------------------------------------------------------------------------------
-Q14 - Convert this this normal function into IIFE function
+✅Q14 - Convert this this normal function into IIFE function
 function init(){
     console.log("initialised");
 }
 =============================================================================================
-Higher Order Function + Closure + Currying level
+✅Higher Order Function + Closure + Currying level
 ---------------------------------------------------------------------------------------------
-Q1. (Function as Parameter)
+✅Q1. (Function as Parameter)
 
 Ek HOF runTwice banao jo ek function accept kare aur usko 2 baar run kare.
 -------------------------------------------------------------------------------------------------
 
-Q2. (Closure Basic)
+✅Q2. (Closure Basic)
 
 Ek function counter banao jo ek function return kare. Har baar call karne par counter +1 ho jaye.
 ------------------------------------------------------------------------------------------------------
 🔹 Medium Level
-Q3. (Currying Sum)
+✅Q3. (Currying Sum)
 
 Ek function sum banao jo 3 arguments ko alag alag function calls me accept kare aur unka sum return kare.
 -------------------------------------------------------------------------------------------------------
-🔹 Q4. Greater Than with Closure
+ ✅Q4. Greater Than with Closure
 
 Ek function greaterThan(n) banao jo ek function return kare
 Ye inner function ek number lega aur check karega ki wo n se bada hai ya nahi.
@@ -252,15 +252,15 @@ Agar bada hai → true, nahi → false
 
 ✅ Mini Practice Set (Self Try)
 
-Q6: Ek function repeatN banao jo ek function aur number n accept kare. Function ko n baar call kare.
+✅ Q6: Ek function repeatN banao jo ek function aur number n accept kare. Function ko n baar call kare.
 
-Q7: Ek function multiplyBy(x) banao jo ek function return kare. Inner function kisi number ko x se multiply kare.
+✅ Q7: Ek function multiplyBy(x) banao jo ek function return kare. Inner function kisi number ko x se multiply kare.
 
-Q8: Ek function isBetween(min, max) banao jo number accept kare aur check kare ki number min aur max ke beech hai ya nahi.
+✅ Q8: Ek function isBetween(min, max) banao jo number accept kare aur check kare ki number min aur max ke beech hai  ya nahi.
 
-Q9: Ek function chainSum(a) banao jo multiple chained calls ke through sum calculate kare. Example: chainSum(1)(2)(3)(4)() → 10.
+✅ Q9: Ek function chainSum(a) banao jo multiple chained calls ke through sum calculate kare. Example: chainSum(1)(2)(3)(4)() → 10.
 
-Q10: Ek function mapArray(arr, func) banao jo array aur function accept kare aur new array return kare jisme function applied ho.
+✅ Q10: Ek function mapArray(arr, func) banao jo array aur function accept kare aur new array return kare jisme function applied ho.
 
 =================================================================================================================
 
