@@ -18,18 +18,38 @@ It includes step-by-step problems, solutions, and explanations from beginner to 
 
 ---
 
+## This Task is Given By the Trianer and i successfully done it ---
 
-### ✅ Mini Practice Set (Self Try)
-=============================================================================================
-✅ Q6: Ek function repeatN banao jo ek function aur number n accept kare. Function ko n baar call kare.
----------------------------------------------------------------------------------------------
-✅ Q7: Ek function multiplyBy(x) banao jo ek function return kare. Inner function kisi number ko x se multiply kare.
----------------------------------------------------------------------------------------------
-✅ Q8: Ek function isBetween(min, max) banao jo number accept kare aur check kare ki number min aur max ke beech hai  ya nahi.
----------------------------------------------------------------------------------------------
-✅ Q9: Ek function chainSum(a) banao jo multiple chained calls ke through sum calculate kare. Example: chainSum(1)(2)(3)(4)() → 10.
----------------------------------------------------------------------------------------------
-✅ Q10: Ek function mapArray(arr, func) banao jo array aur function accept kare aur new array return kare jisme function applied ho.
+✅1. Write a higher-order function `runTwice(fn)` that
+takes another function and executes it two times.
+
+✅2. Create one pure function that always returns the
+ same output for a given input, and one impure
+ function using a global variable.
+✅3. Write a function that uses object destructuring
+ inside parameters to extract and print `name` and
+ `age`.
+ 
+✅4. Demonstrate the difference between normal
+   function and arrow function when used as object
+   methods (the `this` issue).
+
+✅5. Given an array of numbers, use `map()` to create a
+    new array where each number is squared.
+
+✅6. Use `filter()` to get only even numbers from an
+    array.
+✅7. Use `reduce()` to find the total salary from an array
+  of numbers `[1000, 2000, 3000]`.
+
+
+✅8. Create an array of names and use `some()` and
+  `every()` to test a condition (e.g., all names longer than
+   3 chars)
+
+✅ 10. Create a nested object (`user → address → city`) and
+   access the city name inside it.
+
 ---------------------------------------------------------------------------------------------
 
 

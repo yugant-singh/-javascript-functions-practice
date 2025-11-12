@@ -1,7 +1,7 @@
 // ✅  Practice Set —Functions Mastery (Level 1 to 3)
 //  Focus: parameters, arguments, return
 //--------------------------------------------------
-//Q1:✅ 
+//Q1:✅
 // Soultion -
 // function greet(name){
 //     console.log("Hello", name);
@@ -28,7 +28,7 @@
 //   console.log(`${name} is from ${country}`);
 // }
 // introduce("Yugant", "Japan"); //Yugant is from japan
-// introduce("Ravi"); //ravi is from india;  
+// introduce("Ravi"); //ravi is from india;
 // introduce();   //Guest is from india
 
 //-------------------------------------------
@@ -90,7 +90,7 @@
 // }
 // printAll(12,13,14,56,78,34);
 //++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Q2✅: Ek function addAll banao jo jitne bhi numbers aaye unka sum return kare. 
+// Q2✅: Ek function addAll banao jo jitne bhi numbers aaye unka sum return kare.
 
 // Solution -
 
@@ -106,7 +106,7 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// ✅Q4: findMax(10, 25, 8, 99, 32) → 99 
+// ✅Q4: findMax(10, 25, 8, 99, 32) → 99
 //Solution:
 
 // function findMax(...nums) {
@@ -258,7 +258,7 @@
 // -
 // ✅Q2 - What is the difference between function statement and function expression in terms of hoisting :
 
-// Ans- function statement can be hoisted ,means they can be call before the define but function expression can not hold the hoisting property 
+// Ans- function statement can be hoisted ,means they can be call before the define but function expression can not hold the hoisting property
 
 //=======================================================
 // ✅Q3 - convert the given function in to arrow function.
@@ -327,10 +327,10 @@
 //=======================================================
 //✅ Q9 - What does it mean when we say that "Function are first class citizens"
 
-// When we say that Function are the first class functio it means we can use the function likea variable means we can store the functon in the variable 
+// When we say that Function are the first class functio it means we can use the function likea variable means we can store the functon in the variable
 
 //=========================================================
-//✅ Q10 - Pass an function into another function and execute it 
+//✅ Q10 - Pass an function into another function and execute it
 //Solution:
 
 // function sayHello(callback){
@@ -343,8 +343,8 @@
 // })
 
 //=======================================================
-//✅ Q11 - What is Higher order function 
-// Answer =  Higer order vo function hote hai jo ya to ek function as a arguement accept kre ya to ek function return kre to jo function ek function return krta hia ya accept krta hai as arguement 
+//✅ Q11 - What is Higher order function
+// Answer =  Higer order vo function hote hai jo ya to ek function as a arguement accept kre ya to ek function return kre to jo function ek function return krta hia ya accept krta hai as arguement
 //=======================================================
 
 //✅ Higher Order Function + Closure + Currying level
@@ -423,7 +423,7 @@
 
 // ✅ Mini Practice Set (Self Try)
 //---------------------------------------------------------
-// Q6: Ek function repeatN banao jo ek function aur number n accept kare. Function ko n baar call kare.
+// ✅Q6: Ek function repeatN banao jo ek function aur number n accept kare. Function ko n baar call kare.
 
 //Solution:
 
@@ -439,7 +439,7 @@
 
 //---------------------------------------------------------
 
-// Q7: Ek function multiplyBy(x) banao jo ek function return kare. Inner function kisi number ko x se multiply kare.
+// ✅Q7: Ek function multiplyBy(x) banao jo ek function return kare. Inner function kisi number ko x se multiply kare.
 //Solution:
 
 // function multiplyBy(x){
@@ -453,7 +453,7 @@
 // fnc();
 
 //---------------------------------------------------------
-// Q8: Ek function isBetween(min, max) banao jo number accept kare aur check kare ki number min aur max ke beech hai ya nahi.
+// ✅Q8: Ek function isBetween(min, max) banao jo number accept kare aur check kare ki number min aur max ke beech hai ya nahi.
 //Solution:
 
 // function isBetween(min, max) {
@@ -468,7 +468,7 @@
 
 //---------------------------------------------------------
 
-// // Q9: Ek function chainSum(a) banao jo multiple chained calls ke through sum calculate kare. Example: chainSum(1)(2)(3)(4)() → 10.
+//✅ // Q9: Ek function chainSum(a) banao jo multiple chained calls ke through sum calculate kare. Example: chainSum(1)(2)(3)(4)() → 10.
 
 // //Solution:
 // function chainSum(a) {
@@ -490,12 +490,81 @@
 
 
 
+// ✅1. Write a higher-order function `runTwice(fn)` that
+// takes another function and executes it two times.
+
+// function runTwice(callback){
+//     callback();
+//     callback();
+// }
+
+// runTwice(function(){
+//     console.log("Higher order function");
+// })
+//-----------------------------------------------------------------------------
+
+// ✅5. Given an array of numbers, use `map()` to create a
+// new array where each number is squared.
+
+// let numbers = [12,23,45,67];
+// let squared =numbers.map(function(number){
+//     return  number*number;
+// })
+
+// console.log(squared);
 
 
+//-----------------------------------------------------------------------------
 
+// ✅6. Use `filter()` to get only even numbers from an
+// array.
 
+// let numbers = [24,13,53,46];
+// let even =numbers.filter(function(number){
+//    return number%2===0;
+// })
+// console.log(even);
 
+//-----------------------------------------------------------------------------
+// ✅7. Use `reduce()` to find the total salary from an array
+// of numbers `[1000, 2000, 3000]`.
 
+// let numbers = [1000, 2000, 3000];
+// let total = numbers.reduce(function(acc,val){
+//            return acc+val;
+// },0)
+// console.log(total);
+
+//-----------------------------------------------------------------------------
+
+// ✅8. Create an array of names and use `some()` and
+// `every()` to test a condition (e.g., all names longer than
+// 3 chars).
+
+// let users = ["yug","ankita", "dilshan", "ambika rathore"];
+// let somes = users.some(function(val){
+//     return val.length>3;
+// })
+
+// console.log(somes);
+//
+//✅ 10. Create a nested object (`user → address → city`) and
+// access the city name inside it.
+
+// let user = {
+//     name: "yugant",
+//     age:23,
+//     address:{
+//         city: "indore",
+//         country:"india"
+//     }
+// }
+
+// let newuser  = {...user}    //destructuring the obj
+// newuser.address.city="Bhopal";
+// newuser.address.country = "America";
+
+//-----------------------------------------------------------------------------
 
 
 
