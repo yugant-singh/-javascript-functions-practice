@@ -18,38 +18,20 @@ It includes step-by-step problems, solutions, and explanations from beginner to 
 
 ---
 
-## This Task is Given By the Trianer and i successfully done it ---
+## This Task is Given By the Harsh Bhaiya  and I successfully done it ---
+Level 3 – Advanced JavaScript Function + Array + Object Scenarios
 
-✅1. Write a higher-order function `runTwice(fn)` that
-takes another function and executes it two times.
+✅1. Write a function delayMessage(msg, time) that uses setTimeout() to log the message after time milliseconds.
 
-✅2. Create one pure function that always returns the
- same output for a given input, and one impure
- function using a global variable.
-✅3. Write a function that uses object destructuring
- inside parameters to extract and print `name` and
- `age`.
- 
-✅4. Demonstrate the difference between normal
-   function and arrow function when used as object
-   methods (the `this` issue).
+✅2. Create a higher-order function repeat(fn, n) that runs a given function n times.
 
-✅5. Given an array of numbers, use `map()` to create a
-    new array where each number is squared.
+✅3. Write a closure called createCounter() that returns a function which increments and logs an internal counter each time it's called.
 
-✅6. Use `filter()` to get only even numbers from an
-    array.
-✅7. Use `reduce()` to find the total salary from an array
-  of numbers `[1000, 2000, 3000]`.
+✅4. Build a function createUser(name) that returns another function allowing you to update and view the user's name (use closure).
 
+✅5. Write a function calculateTotal(cart) where cart is an array of objects {name, price, quantity}; return the total price using reduce().
 
-✅8. Create an array of names and use `some()` and
-  `every()` to test a condition (e.g., all names longer than
-   3 chars)
-
-✅ 10. Create a nested object (`user → address → city`) and
-   access the city name inside it.
-
+### More Questions coming...
 ---------------------------------------------------------------------------------------------
 
 

@@ -564,16 +564,72 @@
 // newuser.address.city="Bhopal";
 // newuser.address.country = "America";
 
-//-----------------------------------------------------------------------------
+//----------------------------------------------------
 
 
+// ✅Level 3 – Advanced JavaScript Function + Array + Object Scenarios
+
+// ✅1. Write a function delayMessage(msg, time) that uses setTimeout() to log the message after time milliseconds.
 
 
+// function delayMessage(msg , time){
+//     setTimeout(function(){
+//         console.log(msg);
+//     },time)
+// }
+
+// delayMessage("Hello Yugant" , 2000);
+
+//--------------------------------------------------
+
+// //✅ 2. Create a higher-order function repeat(fn, n) that runs a given function n times.
 
 
+//  function repeat(fn , n){
+//    for(let i =0; i<n; i++){
+//         fn();
+//     }
+// }
+// repeat(sayHello , 5)
+// function sayHello(){
+//     console.log("Hello Yugant");
+// }
+
+//--------------------------------------------------
+
+//✅ // 3. Write a closure called createCounter() that returns a function which increments and logs an internal counter each time it's called.
+
+// function createCounter(){
+//     let a = 0;
+//     return  function(){
+//         a++;
+//         console.log(a);
+//     }
+// }
+
+// let fnc  = createCounter();
+// fnc();
+// fnc();
+// fnc();
+
+//--------------------------------------------------
+
+// 4. Build a function createUser(name) that returns another function allowing you to update and view the user's name (use closure).
+
+//--------------------------------------------------
+
+//✅ 5. Write a function calculateTotal(cart) where cart is an array of objects {name, price, quantity}; return the total price using reduce().
 
 
+// let cart = [
 
+//     {name: "Shooes", price: 1200, quantity: 2},
+//      {name: "Shirt", price: 620, quantity: 4},
+//       {name: "Sleeper", price: 200, quantity: 2},
+// ]
 
+// let total = cart.reduce(function(acc, val){
+//     return acc+(val.quantity*(val.price));
+// },0)
 
-
+// console.log(total);

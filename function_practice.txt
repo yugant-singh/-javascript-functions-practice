@@ -263,8 +263,10 @@ Agar bada hai → true, nahi → false
 ✅ Q10: Ek function mapArray(arr, func) banao jo array aur function accept kare aur new array return kare jisme function applied ho.
 
 =================================================================================================================
-This Task is Given By the Trianer and i successfully done it ---
+Level 2 ✅- 
+This Task is Given By the Trianer and I successfully done it ---
 
+----------------------------------------------------
 ✅1. Write a higher-order function `runTwice(fn)` that
 takes another function and executes it two times.
 
@@ -295,3 +297,47 @@ takes another function and executes it two times.
 
 ✅ 10. Create a nested object (`user → address → city`) and
    access the city name inside it.
+
+
+----------------------------------------------------
+Level 3 – Advanced JavaScript Function + Array + Object Scenarios
+
+✅1. Write a function delayMessage(msg, time) that uses setTimeout() to log the message after time milliseconds.
+
+✅2. Create a higher-order function repeat(fn, n) that runs a given function n times.
+
+✅3. Write a closure called createCounter() that returns a function which increments and logs an internal counter each time it's called.
+
+✅4. Build a function createUser(name) that returns another function allowing you to update and view the user's name (use closure).
+
+✅5. Write a function calculateTotal(cart) where cart is an array of objects {name, price, quantity}; return the total price using reduce().
+
+6. Use destructuring with default values to safely extract email and phone from an object where they might not exist.
+
+7. Create a function getAdults(users) that filters and returns only those users (array of objects) whose age >= 18.
+
+8. Write a function that accepts any number of student marks (via rest parameters) and returns their average.
+
+9. Create an array of names and use a chained operation: filter() -> map() -> sort() -> join() to get a single formatted string.
+
+10. Demonstrate function hoisting vs variable hoisting by declaring and calling before definitions; log the differences.
+
+11. Create a timer app simulation that uses setInterval() to log seconds passed; stop it after 5 seconds using clearInterval().
+
+12. Write a function that accepts another function and data array, then applies the function to each element (simulate a custom forEach).
+
+13. Write a function that takes a number and returns another function that multiplies its argument by that number (e.g., double = multiplier(2)).
+
+14. Create a function that logs its own name using the arguments.callee.name property (or alternative).
+
+15. Use object destructuring + spread to copy a user object while changing one property ({ ...user, city: "Delhi" } pattern).
+
+16. Write an object bankAccount with methods deposit(amount) and withdraw(amount) maintaining balance internally (use closure or this).
+
+17. Create an array of products and use sort() to rank them by price from highest to lowest; then extract only product names.
+
+18. Create a function logger(prefix) that returns another function which logs messages with that prefix (use closure).
+
+19. Combine Object.freeze() with nested objects — show that deep properties can still change unless you use a deep-freeze helper.
+
+20. Implement a mini version of map() called myMap() that takes an array and a callback, and returns a new array of transformed values.
